@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 1</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>Trabalho Processamento de Vídeo</h1>
+  <div class="section">
+    <h2>WizardsVideo</h2>
+    <p>Danilo Misura de Oliveira                      - 11006514</p>
+    <p>Gabriel da Fonseca Nunes                       - 11201921456<p>
+    <p>Thiago Vinícius Pereira Graciano de Souza      - 11201722589 <p>
+  </div>
+  <div class="section">
+    <h2 class="section-title">OBJETIVO</h2>
+    <div class="section-content">
+      <p class="section-content">
+        Este trabalho visa realizar um algoritmo de processamento de vídeo que identifique áreas brancas da imagem e extraia a informação de temperatura
+        de cor e balanço RGB, comparando imagens de câmeras diferentes e fornecendo parâmetros para equilibrar o balanço de branco entre elas.
+      </p>
+    </div>
+    <h2 class="section-title">CONTEXTO E CENÁRIO DE APLICAÇÃO PARTE 1</h2>
+    <div class="section-content">
+      <p>
+        <video width="640" height="360" controls>
+          <source src="video/video.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>      
+      </p>
+    </div>
+    <div class="section-content">
+      <p class="section-content">
+        Um dos aspectos do trabalho em audiovisual consiste em balancear o balanço do branco entre as imagens das várias câmeras utilizadas, 
+        de forma que não haja discrepância na temperatura de cor das imagens de cada uma. O vídeo abaixo foi realizado na central técnica da
+        TNT Sports e exemplifica o problema. Nele a equipe realiza a análise das imagens recebidas das câmeras de um estádio, apresentando 
+        inconsistência na coloração.
+      </p>
+    </div>
+    <h2 class="section-title">METODOLOGIA</h2>
+      <ul class="section-content">
+        <li>Filtragem: redução de ruído (para valores fora da média não interferirem) e quantização (para homogeneizar áreas maiores).</li>
+        <li>Histograma: identificação da faixa de maior luminosidade na imagem.</li>
+        <li>Localização de pontos de destaque e subtração de fundo: identificação das áreas brancas da imagem.</li>
+        <li>Processamento de cores: identificação do balanço RGB das áreas brancas para comparação.</li>
+      </ul>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
