@@ -120,7 +120,7 @@
         A qualidade da cor de uma fonte luminosa é referida como a sua Temperatura de Cor e é expressa numa escala numérica que tem como unidade o grau Kelvin.
       </p>
       <p class="section-content">
-        O Balanço de Brancos é uma função que intervém na aparência das cores das imagens mas não afeta a exposição. Ou seja, esta função não vai tornar as imagens mais claras ou mais escuras e serve para que as cores que a câmera regista estejam o mais próximo possível das cores que existem de fato nas cenas que estamos fotografando. 
+        O Balanço de Brancos é uma função que intervém na aparência das cores das imagens, mas não afeta a exposição. Ou seja, esta função não vai tornar as imagens mais claras ou mais escuras e serve para que as cores que a câmera regista estejam o mais próximo possível das cores que existem de fato nas cenas que estamos fotografando. 
         Se usarmos o Balanço de Brancos errado, as nossas imagens vão ter a cor errada também. Mas isso pode ser uma opção estética utilizada propositadamente.
       </p>
       <p class="section-content">
@@ -131,7 +131,7 @@
         Esta função vai portanto calibrar o branco em relação aos diferentes tipos de fontes luminosas, equilibrando assim as cores das fotografias.
       </p>
     </div>
-    <h2 class="section-title">CONTEXTO E CENÁRIO DE APLICAÇÃO PARTE 1</h2>
+    <h2 class="section-title">Contexto e Cenário de Aplicação </h2>
     <div class="section-content">
       <p class="section-content"> 
         Um dos aspectos do trabalho em audiovisual consiste em balancear o balanço do branco entre as imagens das várias câmeras utilizadas, 
@@ -140,7 +140,7 @@
         inconsistência na coloração.
       </p>
     </div>
-    <h2 class="section-title">OBJETIVO</h2>
+    <h2 class="section-title">Objetivo</h2>
     <div class="section-content">
       <p class="section-content">
         Este trabalho visa realizar um algoritmo de processamento de vídeo que identifique áreas brancas da imagem e extraia a informação de temperatura
@@ -153,13 +153,41 @@
         </video>      
       </p>
     </div>
-    <h2 class="section-title">METODOLOGIA</h2>
-      <ul class="section-content">
-        <li>Filtragem: redução de ruído (para valores fora da média não interferirem) e quantização (para homogeneizar áreas maiores).</li>
-        <li>Histograma: identificação da faixa de maior luminosidade na imagem.</li>
-        <li>Localização de pontos de destaque e subtração de fundo: identificação das áreas brancas da imagem.</li>
-        <li>Processamento de cores: identificação do balanço RGB das áreas brancas para comparação.</li>
-      </ul>
+    <div class="section-content">
+      <h2 class="section-title">Metodologia</h2>
+      O desenvolvimento do trabalho será realizado em partes e seguirá a seguinte sequência: modelagem funcional, desenvolvimento do sistema 
+      de processamento visual (SPV), elaboração da aplicação do SPV e Questionário Avaliativo. Primeiramente, será realizada a modelagem 
+      funcional do sistema de processamento visual (SPV). Após concluir o modelo do sistema, será realizado o desenvolvimento prático do 
+      SPV. Em seguida, descreveremos todo o processo de desenvolvimento da modelagem do sistema:
+    </div>
+    <div class="section-content">
+      <h2> Modelagem Funcional do Sistema de Processamento Visual (MFS) </h2>
+      Segue abaixo o diagrama funicional do sistema:
+      <p class="section-content">
+        <img src="img/Diagrama Funcionamento Sistema Processamento Visual.jpg" class="tile"> </img>
+      </p>
+    </div>
+    <div>
+      <h2> Desenvolviemto do Sistema de Processamento Visual (SPV) </h2> 
+    </div>
+    <div>
+      <h2> Elaboração de Aplicação Do SPV e Questionario Avaliativo (AQA) </h2> 
+    </div>
+    <div>
+      <h2> Teste De Campo SPV (TCS) </h2> 
+    </div>
+    <div>
+      <div class="references">
+        <h2 class="references-title">Referências</h2>
+        <ol class="reference-list">
+          <li class="reference-item"> MINICHINO, J. HOWSE, J., Learning OpenCV 3 Computer Vision with Python, 2nd Ed, Packt
+            Publishing, 2015</li>
+          <li class="reference-item">Tutorial OpenCV e Python: <link href="https://docs.opencv.org/master/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/master/d6/d00/tutorial_py_root.html  </li>
+          <li class="reference-item">Getting Started with Videos: <link href="https://docs.opencv.org/master/d6/d00/tutorial_py_root.html"> https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html</li>
+          <li class="reference-item">Getting Started with Images: <link href="https://docs.opencv.org/4.x/db/deb/tutorial_display_image.html"> https://docs.opencv.org/4.x/db/deb/tutorial_display_image.html</li>
+        </ol>
+      </div>
+    </div>
   </div>
   <script src="src/script.js"></script>
 </body>
